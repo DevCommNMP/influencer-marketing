@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html><!-- Last Published: Mon Jul 15 2024 11:02:50 GMT+0000 (Coordinated Universal Time) -->
-<html data-wf-domain="www.diveinmedia.in" data-wf-page="6494e027ed7138ebf2a54bb9"
-  data-wf-site="assets" lang="en">
+<html data-wf-domain="www.diveinmedia.in" data-wf-page="6494e027ed7138ebf2a54bb9" data-wf-site="assets" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -20,6 +19,9 @@
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="../assets/css/diveinmedia.webflow.aa0fe08ce.min.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+   <link href="../assets/css/influencers.css" rel="stylesheet" type="text/css">
+  <style type="text/css"></style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="../ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -29,15 +31,9 @@
     type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
   <link href="../assets/63beefc546e1504965b7f1dc_favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="../assets/63beefc90b4e4ee8f4f97dba_webclip.png" rel="apple-touch-icon">
+
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KZDLTNC');</script>
+
   <!-- End Google Tag Manager -->
 
   <!-- This code improves text appearance (thickness) on a published project -->
@@ -46,6 +42,35 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+
+    .holderCircle { width: 500px; height: 500px; border-radius: 100%; margin: 60px auto; position: relative; }
+
+
+.dotCircle { width: 100%; height: 100%; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0; border-radius: 100%; z-index: 20; }
+.dotCircle  .itemDot { display: block; width: 80px; height: 80px; position: absolute; background: #ffffff; color: #7d4ac7; border-radius: 20px; text-align: center; line-height: 80px; font-size: 30px; z-index: 3; cursor: pointer; border: 2px solid #e6e6e6; }
+.dotCircle  .itemDot .forActive { width: 56px; height: 56px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: none; }
+.dotCircle  .itemDot .forActive::after { content: ''; width: 5px; height: 5px; border: 3px solid #7d4ac7; bottom: -31px; left: -14px; filter: blur(1px); position: absolute; border-radius: 100%; }
+.dotCircle  .itemDot .forActive::before { content: ''; width: 6px; height: 6px; filter: blur(5px); top: -15px; position: absolute; transform: rotate(-45deg); border: 6px solid #a733bb; right: -39px; }
+.dotCircle  .itemDot.active .forActive { display: block; }
+.round { position: absolute; left: 40px; top: 45px; width: 410px; height: 410px; border: 2px dotted #a733bb; border-radius: 100%; -webkit-animation: rotation 100s infinite linear; }
+.dotCircle .itemDot:hover, .dotCircle .itemDot.active { color: #ffffff; transition: 0.5s;   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d4ac7+0,a733bb+100 */ background: #7d4ac7; /* Old browsers */ background: -moz-linear-gradient(left, #7d4ac7 0%, #a733bb 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #7d4ac7 0%, #a733bb 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #7d4ac7 0%, #a733bb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d4ac7', endColorstr='#a733bb', GradientType=1); /* IE6-9 */ border: 2px solid #ffffff; -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13); -moz-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13); box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13); }
+.dotCircle .itemDot { font-size: 40px; }
+.contentCircle { width: 250px; border-radius: 100%; color: #222222; position: relative; top: 150px; left: 50%; transform: translate(-50%, -50%); }
+.contentCircle .CirItem { border-radius: 100%; color: #222222; position: absolute; text-align: center; bottom: 0; left: 0; opacity: 0; transform: scale(0); transition: 0.5s; font-size: 15px; width: 100%; height: 100%; top: 0; right: 0; margin: auto; line-height: 250px; }
+.CirItem.active { z-index: 1; opacity: 1; transform: scale(1); transition: 0.5s; }
+.contentCircle .CirItem i { font-size: 180px; position: absolute; top: 0; left: 50%; margin-left: -90px; color: #000000; opacity: 0.1; }
+@media only screen and (min-width:300px) and (max-width:599px) {
+	.holderCircle {/* width: 300px; height: 300px;*/ margin: 110px auto; }
+	.holderCircle::after { width: 100%; height: 100%; }
+	.dotCircle { width: 100%; height: 100%; top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
+}
+@media only screen and (min-width:600px) and (max-width:767px) { }
+@media only screen and (min-width:768px) and (max-width:991px) { }
+@media only screen and (min-width:992px) and (max-width:1199px) { }
+@media only screen and (min-width:1200px) and (max-width:1499px) { }
+  .title-box .title { font-weight: 600; letter-spacing: 2px; position: relative; z-index: -1; }
+        .title-box span { text-shadow: 0 10px 10px rgba(0, 0, 0, .15); font-weight: 800; color: #640178; }
+        .title-box p {font-size: 17px; line-height: 2em; }
   </style>
 </head>
 
@@ -140,9 +165,8 @@
       role="banner" class="nav_component w-nav">
       <div class="page-padding">
         <div class="nav_container"><a href="influencer-marketing.html" aria-current="page"
-            class="nav_logo-link w-nav-brand w--current"><img
-              src="../assets/639f4b3566f416beee10ae96_nav-logo.png" loading="lazy" width="Auto"
-              height="Auto" alt="DiveIn Media Logo" class="nav_logo"></a></div>
+            class="nav_logo-link w-nav-brand w--current"><img src="../assets/company-logo.png"
+              loading="lazy" width="Auto" height="Auto" alt="DiveIn Media Logo" class="nav_logo"></a></div>
       </div>
     </div>
     <main class="main-wrapper">
@@ -159,8 +183,10 @@
                   <p>Dominate your category, and be prepared to experience hypergrowth. Want to reach millions of your
                     customers through your next influencer marketing strategy?</p>
                 </div>
+                <div  id="getstarted-btn"><a class="button-white blue-bg w-button">Get Started</a>
+                </div>
               </div>
-              <div class="lp-hero_form-wrapper">
+              <div class="lp-hero_form-wrapper" id="contactForm">
                 <div class="contact_form-wrapper-influencers w-form">
                   <form id="wf-form-LP---Influencer-Marketing" name="wf-form-LP---Influencer-Marketing"
                     data-name="LP - Influencer Marketing" redirect="/thank-you" data-redirect="/thank-you" method="get"
@@ -290,62 +316,54 @@
                 </style>
               </div>
               <div class="client-logo_content-grid">
-                <div class="client-logo_content"><img
-                    src="../assets/63b7a4e26824181f3cd2c54e_Baidyanath_logo.png" loading="lazy"
-                    width="126" id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6289-f2a54bb9" alt="Baidyanath Logo"
+                <div class="client-logo_content"><img src="../assets/63b7a4e26824181f3cd2c54e_Baidyanath_logo.png"
+                    loading="lazy" width="126" id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6289-f2a54bb9"
+                    alt="Baidyanath Logo"
                     srcset="../assets/63b7a4e26824181f3cd2c54e_Baidyanath_logo-p-500.png 500w, ../assets/63b7a4e26824181f3cd2c54e_Baidyanath_logo.png 788w"
-                    sizes="120px" class="client-logo_image"><img
-                    src="../assets/63b7a4e2af60ce3e3ce7f0a0_KUKU-FM.png" loading="eager" sizes="120px"
-                    width="120" alt="KUKU FM Logo"
+                    sizes="120px" class="client-logo_image"><img src="../assets/63b7a4e2af60ce3e3ce7f0a0_KUKU-FM.png"
+                    loading="eager" sizes="120px" width="120" alt="KUKU FM Logo"
                     srcset="../assets/63b7a4e2af60ce3e3ce7f0a0_KUKU-FM-p-500.png 500w, ../assets/63b7a4e2af60ce3e3ce7f0a0_KUKU-FM.png 824w"
                     class="client-logo_image"><img
-                    src="../assets/63b7a4e21d90aee71bfe0600_simplilearn-logo-2048x819-1.png.webp"
-                    loading="eager" width="126" sizes="120px" alt="Simplilearn Logo"
+                    src="../assets/63b7a4e21d90aee71bfe0600_simplilearn-logo-2048x819-1.png.webp" loading="eager"
+                    width="126" sizes="120px" alt="Simplilearn Logo"
                     srcset="../assets/63b7a4e21d90aee71bfe0600_simplilearn-logo-2048x819-1.png-p-500.webp 500w, ../assets/63b7a4e21d90aee71bfe0600_simplilearn-logo-2048x819-1.png.webp 638w"
-                    class="client-logo_image"><img src="../assets/639f5cf43c2d5820ad88360c_sunova.png"
-                    loading="eager" width="126" alt="Sunova Logo" class="client-logo_image"><img
+                    class="client-logo_image"><img src="../assets/639f5cf43c2d5820ad88360c_sunova.png" loading="eager"
+                    width="126" alt="Sunova Logo" class="client-logo_image"><img
                     src="../assets/639f5cf466f4160fd111e4c5_greencure.png" loading="eager"
                     id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b628d-f2a54bb9" width="126" alt="Grenncure"
-                    class="client-logo_image"><img
-                    src="../assets/639f5cf466f4163dbb11e4c6_relevel.png" loading="eager" width="91"
-                    id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b628e-f2a54bb9" alt="Relevel"
-                    class="client-logo_image"><img
-                    src="../assets/639f5cf4515851d499dc0f82_ekacare.png" loading="eager" width="128"
-                    id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b628f-f2a54bb9" alt="Ekacare Logo"
-                    class="client-logo_image"><img
-                    src="../assets/63b79ff5476f22645eb25f21_gamezy-t.png" loading="eager" width="128"
-                    alt="Gamezy Logo" class="client-logo_image"><img
-                    src="../assets/63b7a10e24c56d066fa9ace0_fytika.webp" loading="eager" width="128"
-                    sizes="120px" alt="Fytika Logo"
+                    class="client-logo_image"><img src="../assets/639f5cf466f4163dbb11e4c6_relevel.png" loading="eager"
+                    width="91" id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b628e-f2a54bb9" alt="Relevel"
+                    class="client-logo_image"><img src="../assets/639f5cf4515851d499dc0f82_ekacare.png" loading="eager"
+                    width="128" id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b628f-f2a54bb9" alt="Ekacare Logo"
+                    class="client-logo_image"><img src="../assets/63b79ff5476f22645eb25f21_gamezy-t.png" loading="eager"
+                    width="128" alt="Gamezy Logo" class="client-logo_image"><img
+                    src="../assets/63b7a10e24c56d066fa9ace0_fytika.webp" loading="eager" width="128" sizes="120px"
+                    alt="Fytika Logo"
                     srcset="../assets/63b7a10e24c56d066fa9ace0_fytika-p-500.webp 500w, ../assets/63b7a10e24c56d066fa9ace0_fytika.webp 747w"
                     class="client-logo_image"></div>
-                <div class="client-logo_content"><img
-                    src="../assets/63b7a4e26824181f3cd2c54e_Baidyanath_logo.png" loading="eager"
-                    width="126" id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6293-f2a54bb9" alt="Baidyanath Logo"
+                <div class="client-logo_content"><img src="../assets/63b7a4e26824181f3cd2c54e_Baidyanath_logo.png"
+                    loading="eager" width="126" id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6293-f2a54bb9"
+                    alt="Baidyanath Logo"
                     srcset="../assets/63b7a4e26824181f3cd2c54e_Baidyanath_logo-p-500.png 500w, ../assets/63b7a4e26824181f3cd2c54e_Baidyanath_logo.png 788w"
-                    sizes="120px" class="client-logo_image"><img
-                    src="../assets/63b7a4e2af60ce3e3ce7f0a0_KUKU-FM.png" loading="eager" sizes="120px"
-                    width="120" alt="KUKU FM Logo"
+                    sizes="120px" class="client-logo_image"><img src="../assets/63b7a4e2af60ce3e3ce7f0a0_KUKU-FM.png"
+                    loading="eager" sizes="120px" width="120" alt="KUKU FM Logo"
                     srcset="../assets/63b7a4e2af60ce3e3ce7f0a0_KUKU-FM-p-500.png 500w, ../assets/63b7a4e2af60ce3e3ce7f0a0_KUKU-FM.png 824w"
                     class="client-logo_image"><img
-                    src="../assets/63b7a4e21d90aee71bfe0600_simplilearn-logo-2048x819-1.png.webp"
-                    loading="lazy" width="126" sizes="120px" alt="Simplilearn Logo"
+                    src="../assets/63b7a4e21d90aee71bfe0600_simplilearn-logo-2048x819-1.png.webp" loading="lazy"
+                    width="126" sizes="120px" alt="Simplilearn Logo"
                     srcset="../assets/63b7a4e21d90aee71bfe0600_simplilearn-logo-2048x819-1.png-p-500.webp 500w, ../assets/63b7a4e21d90aee71bfe0600_simplilearn-logo-2048x819-1.png.webp 638w"
-                    class="client-logo_image"><img src="../assets/639f5cf43c2d5820ad88360c_sunova.png"
-                    loading="lazy" width="126" alt="Sunova Logo" class="client-logo_image"><img
+                    class="client-logo_image"><img src="../assets/639f5cf43c2d5820ad88360c_sunova.png" loading="lazy"
+                    width="126" alt="Sunova Logo" class="client-logo_image"><img
                     src="../assets/639f5cf466f4160fd111e4c5_greencure.png" loading="lazy"
                     id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6297-f2a54bb9" width="126" alt="Grenncure"
-                    class="client-logo_image"><img
-                    src="../assets/639f5cf466f4163dbb11e4c6_relevel.png" loading="lazy" width="91"
-                    id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6298-f2a54bb9" alt="Relevel"
-                    class="client-logo_image"><img
-                    src="../assets/639f5cf4515851d499dc0f82_ekacare.png" loading="lazy" width="128"
-                    id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6299-f2a54bb9" alt="Ekacare Logo"
-                    class="client-logo_image"><img
-                    src="../assets/63b79ff5476f22645eb25f21_gamezy-t.png" loading="lazy" width="128"
-                    alt="Gamezy Logo" class="client-logo_image"><img
-                    src="../assets/63b7a10e24c56d066fa9ace0_fytika.webp" loading="lazy" width="128"
-                    sizes="120px" alt="Fytika Logo"
+                    class="client-logo_image"><img src="../assets/639f5cf466f4163dbb11e4c6_relevel.png" loading="lazy"
+                    width="91" id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6298-f2a54bb9" alt="Relevel"
+                    class="client-logo_image"><img src="../assets/639f5cf4515851d499dc0f82_ekacare.png" loading="lazy"
+                    width="128" id="w-node-f58021f9-63fb-6c81-43b1-3c4a8b5b6299-f2a54bb9" alt="Ekacare Logo"
+                    class="client-logo_image"><img src="../assets/63b79ff5476f22645eb25f21_gamezy-t.png" loading="lazy"
+                    width="128" alt="Gamezy Logo" class="client-logo_image"><img
+                    src="../assets/63b7a10e24c56d066fa9ace0_fytika.webp" loading="lazy" width="128" sizes="120px"
+                    alt="Fytika Logo"
                     srcset="../assets/63b7a10e24c56d066fa9ace0_fytika-p-500.webp 500w, ../assets/63b7a10e24c56d066fa9ace0_fytika.webp 747w"
                     class="client-logo_image"></div>
               </div>
@@ -353,9 +371,160 @@
           </div>
         </div>
       </section>
-      <div class="stats"><img src="../assets/63a147f49eeb4ea1423c4a55_stats-wave.svg" loading="lazy"
-          alt="" class="stats-wave">
-        <div class="section-stats">
+      <div class="stats"><img src="../assets/63a147f49eeb4ea1423c4a55_stats-wave.svg" loading="lazy" alt=""
+          class="stats-wave">
+       
+      </div>
+      <div id="lp-services" class="section-home-services">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="padding-vertical padding-huge">
+              <div class="stats-title-wrapper container-small">
+                <div class="margin-bottom margin-small">
+                  <h2 class="heading-medium">Our Services</h2>
+                </div>
+                <div class="heading-underline"></div>
+                <div class="margin-bottom margin-medium">
+                  <p>Fastest-growing Influencer Marketing agency in India, connecting brands with relevant influencers
+                    through our AI-driven Data.</p>
+                </div>
+              </div>
+              <div class="home-services-card-grid">
+                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f4728f-f2a54bb9" class="home-service-card">
+                  <div class="home-service-card-content">
+                    <div class="home-service-card-img-wrapper"><img
+                        src="../assets/63f0ef050314aa596820cc48_services-icon-youtube-bg.webp" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
+                        alt="Youtube Influencer Marketing Graphic"
+                        srcset="../assets/63f0ef050314aa596820cc48_services-icon-youtube-bg-p-500.webp 500w, ../assets/63f0ef050314aa596820cc48_services-icon-youtube-bg.webp 640w"
+                        class="home-service-card-img-bg"><img
+                        src="../assets/63f0f0267a954c61cd80be31_services-icon-youtube-fg.png" loading="lazy" width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
+                        alt=""
+                        srcset="../assets/63f0f0267a954c61cd80be31_services-icon-youtube-fg-p-500.png 500w, ../assets/63f0f0267a954c61cd80be31_services-icon-youtube-fg.png 640w"
+                        class="home-service-card-img-fg"></div>
+                    <h3 class="service-card-title margin-bottom margin-xsmall">Youtube Influencer Marketing</h3>
+                    <div>Want top industry YouTubers to talk about your product? Let’s discuss on how we can make it
+                      happen.</div>
+                  </div>
+                </div>
+                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f4729a-f2a54bb9" class="home-service-card">
+                  <div class="home-service-card-content">
+                    <div class="home-service-card-img-wrapper"><img
+                        src="../assets/63f0ef04a2038a6926618d4a_services-icon-telegram-bg.webp" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
+                        alt=""
+                        srcset="../assets/63f0ef04a2038a6926618d4a_services-icon-telegram-bg-p-500.webp 500w, ../assets/63f0ef04a2038a6926618d4a_services-icon-telegram-bg.webp 640w"
+                        class="home-service-card-img-bg"><img
+                        src="../assets/63f0f027df7fb70a755b2f57_services-icon-telegram-fg.png" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
+                        alt=""
+                        srcset="../assets/63f0f027df7fb70a755b2f57_services-icon-telegram-fg-p-500.png 500w, ../assets/63f0f027df7fb70a755b2f57_services-icon-telegram-fg.png 640w"
+                        class="home-service-card-img-fg"></div>
+                    <h3 class="service-card-title margin-bottom margin-xsmall">Telegram Influencer Marketing</h3>
+                    <div>Telegram groups bring together people with similar interests. Learn how to get the most out of
+                      it in order to fulfill your brand’s goals.</div>
+                  </div>
+                </div>
+                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f472a5-f2a54bb9" class="home-service-card">
+                  <div class="home-service-card-content">
+                    <div class="home-service-card-img-wrapper"><img
+                        src="../assets/63f0ef0448a58b01069b7c07_services-icon-instagram-bg.webp" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.34375px"
+                        alt="Instagram Influencer Marketing Graphic"
+                        srcset="../assets/63f0ef0448a58b01069b7c07_services-icon-instagram-bg-p-500.webp 500w, ../assets/63f0ef0448a58b01069b7c07_services-icon-instagram-bg.webp 640w"
+                        class="home-service-card-img-bg"><img
+                        src="../assets/63f0ef0359fff83495a43779_services-icon-instagram-fg.png" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.34375px"
+                        alt=""
+                        srcset="../assets/63f0ef0359fff83495a43779_services-icon-instagram-fg-p-500.png 500w, ../assets/63f0ef0359fff83495a43779_services-icon-instagram-fg.png 640w"
+                        class="home-service-card-img-fg"></div>
+                    <h3 class="service-card-title margin-bottom margin-xsmall">Instagram Influencer Marketing</h3>
+                    <div>Feature your items in viral Instagram reels, feeds, and stories of trending Instagram
+                      Influencers to increase brand awareness.</div>
+                  </div>
+                </div>
+                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f472b0-f2a54bb9" class="home-service-card">
+                  <div class="home-service-card-content">
+                    <div class="home-service-card-img-wrapper"><img
+                        src="../assets/63f0f0bf63ea22d45921d32f_services-icon-meme-bg.webp" loading="lazy" width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
+                        alt="Meme Marketing Graphic"
+                        srcset="../assets/63f0f0bf63ea22d45921d32f_services-icon-meme-bg-p-500.webp 500w, ../assets/63f0f0bf63ea22d45921d32f_services-icon-meme-bg.webp 640w"
+                        class="home-service-card-img-bg"><img
+                        src="../assets/63f0ef0489bce96befef11f0_services-icon-meme-fg.png" loading="lazy" width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
+                        alt=""
+                        srcset="../assets/63f0ef0489bce96befef11f0_services-icon-meme-fg-p-500.png 500w, ../assets/63f0ef0489bce96befef11f0_services-icon-meme-fg.png 640w"
+                        class="home-service-card-img-fg"></div>
+                    <h3 class="service-card-title margin-bottom margin-xsmall">Meme Marketing</h3>
+                    <div>Don’t we all enjoy memes and how easily we relate to them? Meme Marketing has a tremendous
+                      influence on your audience’s thoughts. Let’s get some memes rolling.</div>
+                  </div>
+                </div>
+                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f472bb-f2a54bb9" class="home-service-card">
+                  <div class="home-service-card-content">
+                    <div class="home-service-card-img-wrapper"><img
+                        src="../assets/63f0ef04f2b8ff88a024ab37_services-icon-celebrity-bg.webp" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
+                        alt=""
+                        srcset="../assets/63f0ef04f2b8ff88a024ab37_services-icon-celebrity-bg-p-500.webp 500w, ../assets/63f0ef04f2b8ff88a024ab37_services-icon-celebrity-bg.webp 640w"
+                        class="home-service-card-img-bg"><img
+                        src="../assets/63f0f026b5f34f758e1aa988_services-icon-celebrity-fg.png" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
+                        alt=""
+                        srcset="../assets/63f0f026b5f34f758e1aa988_services-icon-celebrity-fg-p-500.png 500w, ../assets/63f0f026b5f34f758e1aa988_services-icon-celebrity-fg.png 640w"
+                        class="home-service-card-img-fg"></div>
+                    <h3 class="service-card-title margin-bottom margin-xsmall">Celebrity Marketing</h3>
+                    <div>TV actors, singers, Bollywood stars… Join together with famous personalities to advocate your
+                      products and create a showstopper marketing campaign.</div>
+                  </div>
+                </div>
+                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f472c6-f2a54bb9" class="home-service-card">
+                  <div class="home-service-card-content">
+                    <div class="home-service-card-img-wrapper"><img
+                        src="../assets/63f0ef04ad117eb875c65722_services-icon-ideation-bg.webp" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.34375px"
+                        alt="Content creation and Ideation Graphic"
+                        srcset="../assets/63f0ef04ad117eb875c65722_services-icon-ideation-bg-p-500.webp 500w, ../assets/63f0ef04ad117eb875c65722_services-icon-ideation-bg.webp 640w"
+                        class="home-service-card-img-bg"><img
+                        src="../assets/63f0f026700f68001a2c49c4_services-icon-ideation-fg.png" loading="lazy"
+                        width="320"
+                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.34375px"
+                        alt=""
+                        srcset="../assets/63f0f026700f68001a2c49c4_services-icon-ideation-fg-p-500.png 500w, ../assets/63f0f026700f68001a2c49c4_services-icon-ideation-fg.png 640w"
+                        class="home-service-card-img-fg"></div>
+                    <h3 class="service-card-title margin-bottom margin-xsmall">Content Creation &amp; Ideation</h3>
+                    <div>High-quality content that your audience can relate to is essential for a successful campaign.
+                      Allow our team of experts to assist you with this crucial step of the campaign.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="div-block-3"><a href="#contact_form" class="button-white blue-bg w-button">Get Quote</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div>
+        <div class="section-wave-wrapper"><img src="../assets/639f80c738e93f87f0fe6a96_section-wave-dark.svg"
+            loading="lazy" alt="" class="section-wave"></div>
+
+             <div class="section-stats">
           <div class="page-padding">
             <div class="container-large">
               <div class="padding-bottom padding-xhuge">
@@ -427,152 +596,65 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="lp-services" class="section-home-services">
-        <div class="page-padding">
-          <div class="container-large">
-            <div class="padding-vertical padding-huge">
-              <div class="stats-title-wrapper container-small">
-                <div class="margin-bottom margin-small">
-                  <h2 class="heading-medium">Our Services</h2>
-                </div>
-                <div class="heading-underline"></div>
-                <div class="margin-bottom margin-medium">
-                  <p>Fastest-growing Influencer Marketing agency in India, connecting brands with relevant influencers
-                    through our AI-driven Data.</p>
-                </div>
-              </div>
-              <div class="home-services-card-grid">
-                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f4728f-f2a54bb9" class="home-service-card">
-                  <div class="home-service-card-content">
-                    <div class="home-service-card-img-wrapper"><img
-                        src="../assets/63f0ef050314aa596820cc48_services-icon-youtube-bg.webp"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
-                        alt="Youtube Influencer Marketing Graphic"
-                        srcset="../assets/63f0ef050314aa596820cc48_services-icon-youtube-bg-p-500.webp 500w, ../assets/63f0ef050314aa596820cc48_services-icon-youtube-bg.webp 640w"
-                        class="home-service-card-img-bg"><img
-                        src="../assets/63f0f0267a954c61cd80be31_services-icon-youtube-fg.png"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
-                        alt=""
-                        srcset="../assets/63f0f0267a954c61cd80be31_services-icon-youtube-fg-p-500.png 500w, ../assets/63f0f0267a954c61cd80be31_services-icon-youtube-fg.png 640w"
-                        class="home-service-card-img-fg"></div>
-                    <h3 class="service-card-title margin-bottom margin-xsmall">Youtube Influencer Marketing</h3>
-                    <div>Want top industry YouTubers to talk about your product? Let’s discuss on how we can make it
-                      happen.</div>
-                  </div>
-                </div>
-                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f4729a-f2a54bb9" class="home-service-card">
-                  <div class="home-service-card-content">
-                    <div class="home-service-card-img-wrapper"><img
-                        src="../assets/63f0ef04a2038a6926618d4a_services-icon-telegram-bg.webp"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
-                        alt=""
-                        srcset="../assets/63f0ef04a2038a6926618d4a_services-icon-telegram-bg-p-500.webp 500w, ../assets/63f0ef04a2038a6926618d4a_services-icon-telegram-bg.webp 640w"
-                        class="home-service-card-img-bg"><img
-                        src="../assets/63f0f027df7fb70a755b2f57_services-icon-telegram-fg.png"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
-                        alt=""
-                        srcset="../assets/63f0f027df7fb70a755b2f57_services-icon-telegram-fg-p-500.png 500w, ../assets/63f0f027df7fb70a755b2f57_services-icon-telegram-fg.png 640w"
-                        class="home-service-card-img-fg"></div>
-                    <h3 class="service-card-title margin-bottom margin-xsmall">Telegram Influencer Marketing</h3>
-                    <div>Telegram groups bring together people with similar interests. Learn how to get the most out of
-                      it in order to fulfill your brand’s goals.</div>
-                  </div>
-                </div>
-                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f472a5-f2a54bb9" class="home-service-card">
-                  <div class="home-service-card-content">
-                    <div class="home-service-card-img-wrapper"><img
-                        src="../assets/63f0ef0448a58b01069b7c07_services-icon-instagram-bg.webp"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.34375px"
-                        alt="Instagram Influencer Marketing Graphic"
-                        srcset="../assets/63f0ef0448a58b01069b7c07_services-icon-instagram-bg-p-500.webp 500w, ../assets/63f0ef0448a58b01069b7c07_services-icon-instagram-bg.webp 640w"
-                        class="home-service-card-img-bg"><img
-                        src="../assets/63f0ef0359fff83495a43779_services-icon-instagram-fg.png"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.34375px"
-                        alt=""
-                        srcset="../assets/63f0ef0359fff83495a43779_services-icon-instagram-fg-p-500.png 500w, ../assets/63f0ef0359fff83495a43779_services-icon-instagram-fg.png 640w"
-                        class="home-service-card-img-fg"></div>
-                    <h3 class="service-card-title margin-bottom margin-xsmall">Instagram Influencer Marketing</h3>
-                    <div>Feature your items in viral Instagram reels, feeds, and stories of trending Instagram
-                      Influencers to increase brand awareness.</div>
-                  </div>
-                </div>
-                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f472b0-f2a54bb9" class="home-service-card">
-                  <div class="home-service-card-content">
-                    <div class="home-service-card-img-wrapper"><img
-                        src="../assets/63f0f0bf63ea22d45921d32f_services-icon-meme-bg.webp"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
-                        alt="Meme Marketing Graphic"
-                        srcset="../assets/63f0f0bf63ea22d45921d32f_services-icon-meme-bg-p-500.webp 500w, ../assets/63f0f0bf63ea22d45921d32f_services-icon-meme-bg.webp 640w"
-                        class="home-service-card-img-bg"><img
-                        src="../assets/63f0ef0489bce96befef11f0_services-icon-meme-fg.png"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
-                        alt=""
-                        srcset="../assets/63f0ef0489bce96befef11f0_services-icon-meme-fg-p-500.png 500w, ../assets/63f0ef0489bce96befef11f0_services-icon-meme-fg.png 640w"
-                        class="home-service-card-img-fg"></div>
-                    <h3 class="service-card-title margin-bottom margin-xsmall">Meme Marketing</h3>
-                    <div>Don’t we all enjoy memes and how easily we relate to them? Meme Marketing has a tremendous
-                      influence on your audience’s thoughts. Let’s get some memes rolling.</div>
-                  </div>
-                </div>
-                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f472bb-f2a54bb9" class="home-service-card">
-                  <div class="home-service-card-content">
-                    <div class="home-service-card-img-wrapper"><img
-                        src="../assets/63f0ef04f2b8ff88a024ab37_services-icon-celebrity-bg.webp"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
-                        alt=""
-                        srcset="../assets/63f0ef04f2b8ff88a024ab37_services-icon-celebrity-bg-p-500.webp 500w, ../assets/63f0ef04f2b8ff88a024ab37_services-icon-celebrity-bg.webp 640w"
-                        class="home-service-card-img-bg"><img
-                        src="../assets/63f0f026b5f34f758e1aa988_services-icon-celebrity-fg.png"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.328125px"
-                        alt=""
-                        srcset="../assets/63f0f026b5f34f758e1aa988_services-icon-celebrity-fg-p-500.png 500w, ../assets/63f0f026b5f34f758e1aa988_services-icon-celebrity-fg.png 640w"
-                        class="home-service-card-img-fg"></div>
-                    <h3 class="service-card-title margin-bottom margin-xsmall">Celebrity Marketing</h3>
-                    <div>TV actors, singers, Bollywood stars… Join together with famous personalities to advocate your
-                      products and create a showstopper marketing campaign.</div>
-                  </div>
-                </div>
-                <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f472c6-f2a54bb9" class="home-service-card">
-                  <div class="home-service-card-content">
-                    <div class="home-service-card-img-wrapper"><img
-                        src="../assets/63f0ef04ad117eb875c65722_services-icon-ideation-bg.webp"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.34375px"
-                        alt="Content creation and Ideation Graphic"
-                        srcset="../assets/63f0ef04ad117eb875c65722_services-icon-ideation-bg-p-500.webp 500w, ../assets/63f0ef04ad117eb875c65722_services-icon-ideation-bg.webp 640w"
-                        class="home-service-card-img-bg"><img
-                        src="../assets/63f0f026700f68001a2c49c4_services-icon-ideation-fg.png"
-                        loading="lazy" width="320"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 1439px) 30vw, 405.34375px"
-                        alt=""
-                        srcset="../assets/63f0f026700f68001a2c49c4_services-icon-ideation-fg-p-500.png 500w, ../assets/63f0f026700f68001a2c49c4_services-icon-ideation-fg.png 640w"
-                        class="home-service-card-img-fg"></div>
-                    <h3 class="service-card-title margin-bottom margin-xsmall">Content Creation &amp; Ideation</h3>
-                    <div>High-quality content that your audience can relate to is essential for a successful campaign.
-                      Allow our team of experts to assist you with this crucial step of the campaign.</div>
-                  </div>
-                </div>
-              </div>
-              <div class="div-block-3"><a href="#contact_form" class="button-white blue-bg w-button">Get Quote</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="section-wave-wrapper"><img
-            src="../assets/639f80c738e93f87f0fe6a96_section-wave-dark.svg" loading="lazy" alt=""
-            class="section-wave"></div>
+<!-- Our influencers section-->
+<div class="stats-title-wrapper container-small" style="margin-top: 100px;" >
+  <div class="margin-bottom margin-small">
+    <h2 class="heading-medium">Our Influencers</h2>
+  </div>
+  <div class="heading-underline"></div>
+</div>
+<div class="influencers-conatiner">
+  <div class="influencer-data-container">
+    <div class="cover-photo">
+      <img src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="profile">
+    </div>
+    <div class="profile-name">Beni Smith</div>
+    <p class="about">User Interface Designer and<br>front-end developer</p>
+    <button class="msg-btn">Message</button>
+    <button class="follow-btn">Following</button>
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+  </div>
+
+  <div class="influencer-data-container">
+    <div class="cover-photo">
+      <img src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="profile">
+    </div>
+    <div class="profile-name">Beni Smith</div>
+    <p class="about">User Interface Designer and<br>front-end developer</p>
+    <button class="msg-btn">Message</button>
+    <button class="follow-btn">Following</button>
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+  </div>
+
+  <div class="influencer-data-container">
+    <div class="cover-photo">
+      <img src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="profile">
+    </div>
+    <div class="profile-name">Beni Smith</div>
+    <p class="about">User Interface Designer and<br>front-end developer</p>
+    <button class="msg-btn">Message</button>
+    <button class="follow-btn">Following</button>
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+  </div>
+</div>
+
+<!-- <!-  -->
+        
         <div id="lp-about-us" class="section-home-who-we-are">
           <div class="page-padding">
             <div class="container-large">
@@ -593,8 +675,8 @@
                     <div class="who-we-are_cards-wrapper">
                       <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f4724a-f2a54bb9" class="glass-effect-card home">
                         <div class="card-icon-wrapper"><img
-                            src="../assets/63a122c38af47133329d1f8e_Icon%20-%20influencers.png"
-                            loading="lazy" width="76" alt="" class="card-icon"></div>
+                            src="../assets/63a122c38af47133329d1f8e_Icon%20-%20influencers.png" loading="lazy"
+                            width="76" alt="" class="card-icon"></div>
                         <div class="card-title-wrapper">
                           <h3 class="card-title">Top Influencers</h3>
                         </div>
@@ -605,8 +687,8 @@
                       </div>
                       <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f47253-f2a54bb9" class="glass-effect-card home">
                         <div class="card-icon-wrapper"><img
-                            src="../assets/63a122c465bf7bd8f793774f_Icon%20-%20proeven%20techniques.png"
-                            loading="lazy" width="76" alt="" class="card-icon"></div>
+                            src="../assets/63a122c465bf7bd8f793774f_Icon%20-%20proeven%20techniques.png" loading="lazy"
+                            width="76" alt="" class="card-icon"></div>
                         <div class="card-title-wrapper">
                           <h3 class="card-title">Proven Techniques</h3>
                         </div>
@@ -617,9 +699,8 @@
                         </div>
                       </div>
                       <div id="w-node-_0763abdc-e324-dde1-85c0-119a64f4725c-f2a54bb9" class="glass-effect-card home">
-                        <div class="card-icon-wrapper"><img
-                            src="../assets/63a122c462ffe97078735f01_Icon-%20ai.png" loading="lazy"
-                            alt="" width="76" class="card-icon"></div>
+                        <div class="card-icon-wrapper"><img src="../assets/63a122c462ffe97078735f01_Icon-%20ai.png"
+                            loading="lazy" alt="" width="76" class="card-icon"></div>
                         <div class="card-title-wrapper">
                           <h3 class="card-title">AI-Driven Data</h3>
                         </div>
@@ -644,8 +725,8 @@
                       </div>
                       <div class="glass-effect-card home">
                         <div class="card-icon-wrapper"><img
-                            src="../assets/63a122c3edec0d0a3021a1e5_Icon%20-%20quality.png"
-                            loading="lazy" width="76" alt="" class="card-icon"></div>
+                            src="../assets/63a122c3edec0d0a3021a1e5_Icon%20-%20quality.png" loading="lazy" width="76"
+                            alt="" class="card-icon"></div>
                         <div class="card-title-wrapper">
                           <h3 class="card-title">Utmost Quality</h3>
                         </div>
@@ -671,280 +752,128 @@
           </div>
         </div>
       </div>
-      <section class="section-creator-alliances">
-        <div class="page-padding">
-          <div class="container-large">
-            <div class="padding-vertical padding-huge">
-              <div class="about-cta_title-wrapper container-small">
-                <div class="margin-bottom margin-small">
-                  <h2 class="heading-medium text-color-white">Creator Alliances</h2>
+      <section id="team" class="team-area">
+        <div class="our-team-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading text-center">
+                        <h2>Our <span>Team</span></h2>
+                        <h4>Meet our awesome and expert team members</h4>
+                    </div>
                 </div>
-                <div class="heading-underline"></div>
-                <div class="margin-bottom">
-                  <p class="text-color-light-grey">Trusted by 100+ brands &amp; Influencers</p>
-                </div>
-              </div>
-              <div data-delay="4000" data-animation="slide" class="slider-wrapper w-slider" data-autoplay="false"
-                data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0"
-                data-nav-spacing="12" data-duration="500" data-infinite="true">
-                <div class="slider-mask w-slider-mask">
-                  <div class="slide-wrapper w-slide"><a href="#" class="light-box w-inline-block w-lightbox"><img
-                        src="../assets/663f93b5db767d272ece565f_Fas_AML4UiE-MQ.jpg" loading="lazy"
-                        width="160" alt="" class="light-box_thumbnail">
-                      <div class="light-box_play-btn w-embed"><svg width="100%" height="2.5rem" viewbox="0 0 108 76"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_704_243)">
-                            <path
-                              d="M105.615 11.8539C104.995 9.56272 103.787 7.47394 102.11 5.79554C100.433 4.11714 98.3461 2.90768 96.0568 2.2876C87.6758 0 53.9452 0 53.9452 0C53.9452 0 20.213 0.0692443 11.832 2.35684C9.54268 2.97696 7.45564 4.18648 5.77869 5.86496C4.10174 7.54344 2.89339 9.63231 2.27399 11.9236C-0.26106 26.8272 -1.24445 49.5368 2.3436 63.8442C2.96307 66.1354 4.17144 68.2242 5.84839 69.9026C7.52533 71.581 9.61234 72.7904 11.9016 73.4105C20.2826 75.6981 54.014 75.6981 54.014 75.6981C54.014 75.6981 87.745 75.6981 96.1256 73.4105C98.4149 72.7905 100.502 71.5811 102.179 69.9027C103.856 68.2243 105.064 66.1354 105.684 63.8442C108.358 48.9195 109.182 26.2238 105.615 11.8539Z"
-                              fill="#FF0000"></path>
-                            <path d="M43.209 54.0698L71.1911 37.8489L43.209 21.6279V54.0698Z" fill="white"></path>
-                          </g>
-                          <defs>
-                            <clippath id="clip0_704_243">
-                              <rect width="108" height="76" fill="white"></rect>
-                            </clippath>
-                          </defs>
-                        </svg></div>
-                      <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtube.com/watch?v=Fas_AML4UiE",
-      "originalUrl": "https://youtube.com/watch?v=Fas_AML4UiE",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/Fas_AML4UiE/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FFas_AML4UiE%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFas_AML4UiE&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FFas_AML4UiE%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                    </a></div>
-                  <div class="slide-wrapper w-slide"><a href="#" class="light-box w-inline-block w-lightbox"><img
-                        src="../assets/663f95f4f782fc93b5a5b41c_3GOGxFZr6wM-MQ.jpg" loading="lazy"
-                        width="160" alt="" class="light-box_thumbnail">
-                      <div class="light-box_play-btn w-embed"><svg width="100%" height="2.5rem" viewbox="0 0 108 76"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_704_243)">
-                            <path
-                              d="M105.615 11.8539C104.995 9.56272 103.787 7.47394 102.11 5.79554C100.433 4.11714 98.3461 2.90768 96.0568 2.2876C87.6758 0 53.9452 0 53.9452 0C53.9452 0 20.213 0.0692443 11.832 2.35684C9.54268 2.97696 7.45564 4.18648 5.77869 5.86496C4.10174 7.54344 2.89339 9.63231 2.27399 11.9236C-0.26106 26.8272 -1.24445 49.5368 2.3436 63.8442C2.96307 66.1354 4.17144 68.2242 5.84839 69.9026C7.52533 71.581 9.61234 72.7904 11.9016 73.4105C20.2826 75.6981 54.014 75.6981 54.014 75.6981C54.014 75.6981 87.745 75.6981 96.1256 73.4105C98.4149 72.7905 100.502 71.5811 102.179 69.9027C103.856 68.2243 105.064 66.1354 105.684 63.8442C108.358 48.9195 109.182 26.2238 105.615 11.8539Z"
-                              fill="#FF0000"></path>
-                            <path d="M43.209 54.0698L71.1911 37.8489L43.209 21.6279V54.0698Z" fill="white"></path>
-                          </g>
-                          <defs>
-                            <clippath id="clip0_704_243">
-                              <rect width="108" height="76" fill="white"></rect>
-                            </clippath>
-                          </defs>
-                        </svg></div>
-                      <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://www.youtube.com/watch?v=3GOGxFZr6wM",
-      "originalUrl": "https://www.youtube.com/watch?v=3GOGxFZr6wM",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/3GOGxFZr6wM/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F3GOGxFZr6wM%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3GOGxFZr6wM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3GOGxFZr6wM%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                    </a></div>
-                  <div class="slide-wrapper w-slide"><a href="#" class="light-box w-inline-block w-lightbox"><img
-                        src="../assets/663f96311735f4d4830e1512_wp4yHbrWES8-MQ.jpg" loading="lazy"
-                        width="160" alt="" class="light-box_thumbnail">
-                      <div class="light-box_play-btn w-embed"><svg width="100%" height="2.5rem" viewbox="0 0 108 76"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_704_243)">
-                            <path
-                              d="M105.615 11.8539C104.995 9.56272 103.787 7.47394 102.11 5.79554C100.433 4.11714 98.3461 2.90768 96.0568 2.2876C87.6758 0 53.9452 0 53.9452 0C53.9452 0 20.213 0.0692443 11.832 2.35684C9.54268 2.97696 7.45564 4.18648 5.77869 5.86496C4.10174 7.54344 2.89339 9.63231 2.27399 11.9236C-0.26106 26.8272 -1.24445 49.5368 2.3436 63.8442C2.96307 66.1354 4.17144 68.2242 5.84839 69.9026C7.52533 71.581 9.61234 72.7904 11.9016 73.4105C20.2826 75.6981 54.014 75.6981 54.014 75.6981C54.014 75.6981 87.745 75.6981 96.1256 73.4105C98.4149 72.7905 100.502 71.5811 102.179 69.9027C103.856 68.2243 105.064 66.1354 105.684 63.8442C108.358 48.9195 109.182 26.2238 105.615 11.8539Z"
-                              fill="#FF0000"></path>
-                            <path d="M43.209 54.0698L71.1911 37.8489L43.209 21.6279V54.0698Z" fill="white"></path>
-                          </g>
-                          <defs>
-                            <clippath id="clip0_704_243">
-                              <rect width="108" height="76" fill="white"></rect>
-                            </clippath>
-                          </defs>
-                        </svg></div>
-                      <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://www.youtube.com/watch?v=wp4yHbrWES8",
-      "originalUrl": "https://www.youtube.com/watch?v=wp4yHbrWES8",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/wp4yHbrWES8/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fwp4yHbrWES8%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dwp4yHbrWES8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fwp4yHbrWES8%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                    </a></div>
-                  <div class="slide-wrapper w-slide"><a href="#" class="light-box w-inline-block w-lightbox"><img
-                        src="../assets/663f9681541c0a9a35fe4c85_nVNO8fHcvw0-MQ.jpg" loading="lazy"
-                        width="160" alt="" class="light-box_thumbnail">
-                      <div class="light-box_play-btn w-embed"><svg width="100%" height="2.5rem" viewbox="0 0 108 76"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_704_243)">
-                            <path
-                              d="M105.615 11.8539C104.995 9.56272 103.787 7.47394 102.11 5.79554C100.433 4.11714 98.3461 2.90768 96.0568 2.2876C87.6758 0 53.9452 0 53.9452 0C53.9452 0 20.213 0.0692443 11.832 2.35684C9.54268 2.97696 7.45564 4.18648 5.77869 5.86496C4.10174 7.54344 2.89339 9.63231 2.27399 11.9236C-0.26106 26.8272 -1.24445 49.5368 2.3436 63.8442C2.96307 66.1354 4.17144 68.2242 5.84839 69.9026C7.52533 71.581 9.61234 72.7904 11.9016 73.4105C20.2826 75.6981 54.014 75.6981 54.014 75.6981C54.014 75.6981 87.745 75.6981 96.1256 73.4105C98.4149 72.7905 100.502 71.5811 102.179 69.9027C103.856 68.2243 105.064 66.1354 105.684 63.8442C108.358 48.9195 109.182 26.2238 105.615 11.8539Z"
-                              fill="#FF0000"></path>
-                            <path d="M43.209 54.0698L71.1911 37.8489L43.209 21.6279V54.0698Z" fill="white"></path>
-                          </g>
-                          <defs>
-                            <clippath id="clip0_704_243">
-                              <rect width="108" height="76" fill="white"></rect>
-                            </clippath>
-                          </defs>
-                        </svg></div>
-                      <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://www.youtube.com/watch?v=nVNO8fHcvw0",
-      "originalUrl": "https://www.youtube.com/watch?v=nVNO8fHcvw0",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/nVNO8fHcvw0/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FnVNO8fHcvw0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnVNO8fHcvw0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FnVNO8fHcvw0%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                    </a></div>
-                  <div class="slide-wrapper w-slide"><a href="#" class="light-box w-inline-block w-lightbox"><img
-                        src="../assets/663f96c1e5ade1ff237e51d6_aeSGyeiuirE-MQ.jpg" loading="lazy"
-                        width="160" alt="" class="light-box_thumbnail">
-                      <div class="light-box_play-btn w-embed"><svg width="100%" height="2.5rem" viewbox="0 0 108 76"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_704_243)">
-                            <path
-                              d="M105.615 11.8539C104.995 9.56272 103.787 7.47394 102.11 5.79554C100.433 4.11714 98.3461 2.90768 96.0568 2.2876C87.6758 0 53.9452 0 53.9452 0C53.9452 0 20.213 0.0692443 11.832 2.35684C9.54268 2.97696 7.45564 4.18648 5.77869 5.86496C4.10174 7.54344 2.89339 9.63231 2.27399 11.9236C-0.26106 26.8272 -1.24445 49.5368 2.3436 63.8442C2.96307 66.1354 4.17144 68.2242 5.84839 69.9026C7.52533 71.581 9.61234 72.7904 11.9016 73.4105C20.2826 75.6981 54.014 75.6981 54.014 75.6981C54.014 75.6981 87.745 75.6981 96.1256 73.4105C98.4149 72.7905 100.502 71.5811 102.179 69.9027C103.856 68.2243 105.064 66.1354 105.684 63.8442C108.358 48.9195 109.182 26.2238 105.615 11.8539Z"
-                              fill="#FF0000"></path>
-                            <path d="M43.209 54.0698L71.1911 37.8489L43.209 21.6279V54.0698Z" fill="white"></path>
-                          </g>
-                          <defs>
-                            <clippath id="clip0_704_243">
-                              <rect width="108" height="76" fill="white"></rect>
-                            </clippath>
-                          </defs>
-                        </svg></div>
-                      <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://www.youtube.com/watch?v=aeSGyeiuirE",
-      "originalUrl": "https://www.youtube.com/watch?v=aeSGyeiuirE",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/aeSGyeiuirE/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FaeSGyeiuirE%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DaeSGyeiuirE&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FaeSGyeiuirE%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                    </a></div>
-                  <div class="slide-wrapper w-slide"><a href="#" class="light-box w-inline-block w-lightbox"><img
-                        src="../assets/663f9701d48ced9107898a81_Ny8V5Mn0ikU-MQ.jpg" loading="lazy"
-                        width="160" alt="" class="light-box_thumbnail">
-                      <div class="light-box_play-btn w-embed"><svg width="100%" height="2.5rem" viewbox="0 0 108 76"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_704_243)">
-                            <path
-                              d="M105.615 11.8539C104.995 9.56272 103.787 7.47394 102.11 5.79554C100.433 4.11714 98.3461 2.90768 96.0568 2.2876C87.6758 0 53.9452 0 53.9452 0C53.9452 0 20.213 0.0692443 11.832 2.35684C9.54268 2.97696 7.45564 4.18648 5.77869 5.86496C4.10174 7.54344 2.89339 9.63231 2.27399 11.9236C-0.26106 26.8272 -1.24445 49.5368 2.3436 63.8442C2.96307 66.1354 4.17144 68.2242 5.84839 69.9026C7.52533 71.581 9.61234 72.7904 11.9016 73.4105C20.2826 75.6981 54.014 75.6981 54.014 75.6981C54.014 75.6981 87.745 75.6981 96.1256 73.4105C98.4149 72.7905 100.502 71.5811 102.179 69.9027C103.856 68.2243 105.064 66.1354 105.684 63.8442C108.358 48.9195 109.182 26.2238 105.615 11.8539Z"
-                              fill="#FF0000"></path>
-                            <path d="M43.209 54.0698L71.1911 37.8489L43.209 21.6279V54.0698Z" fill="white"></path>
-                          </g>
-                          <defs>
-                            <clippath id="clip0_704_243">
-                              <rect width="108" height="76" fill="white"></rect>
-                            </clippath>
-                          </defs>
-                        </svg></div>
-                      <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://www.youtube.com/watch?v=Ny8V5Mn0ikU",
-      "originalUrl": "https://www.youtube.com/watch?v=Ny8V5Mn0ikU",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "http://i.ytimg.com/vi/Ny8V5Mn0ikU/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FNy8V5Mn0ikU&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DNy8V5Mn0ikU&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FNy8V5Mn0ikU%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                    </a></div>
-                  <div class="slide-wrapper w-slide"><a href="#" class="light-box w-inline-block w-lightbox"><img
-                        src="../assets/663f973fc7b242a2cbc5e9dc_RJ8x87tUOVo-MQ.jpg" loading="lazy"
-                        width="160" alt="" class="light-box_thumbnail">
-                      <div class="light-box_play-btn w-embed"><svg width="100%" height="2.5rem" viewbox="0 0 108 76"
-                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_704_243)">
-                            <path
-                              d="M105.615 11.8539C104.995 9.56272 103.787 7.47394 102.11 5.79554C100.433 4.11714 98.3461 2.90768 96.0568 2.2876C87.6758 0 53.9452 0 53.9452 0C53.9452 0 20.213 0.0692443 11.832 2.35684C9.54268 2.97696 7.45564 4.18648 5.77869 5.86496C4.10174 7.54344 2.89339 9.63231 2.27399 11.9236C-0.26106 26.8272 -1.24445 49.5368 2.3436 63.8442C2.96307 66.1354 4.17144 68.2242 5.84839 69.9026C7.52533 71.581 9.61234 72.7904 11.9016 73.4105C20.2826 75.6981 54.014 75.6981 54.014 75.6981C54.014 75.6981 87.745 75.6981 96.1256 73.4105C98.4149 72.7905 100.502 71.5811 102.179 69.9027C103.856 68.2243 105.064 66.1354 105.684 63.8442C108.358 48.9195 109.182 26.2238 105.615 11.8539Z"
-                              fill="#FF0000"></path>
-                            <path d="M43.209 54.0698L71.1911 37.8489L43.209 21.6279V54.0698Z" fill="white"></path>
-                          </g>
-                          <defs>
-                            <clippath id="clip0_704_243">
-                              <rect width="108" height="76" fill="white"></rect>
-                            </clippath>
-                          </defs>
-                        </svg></div>
-                      <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://www.youtube.com/watch?v=RJ8x87tUOVo&t=14s",
-      "originalUrl": "https://www.youtube.com/watch?v=RJ8x87tUOVo&t=14s",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/RJ8x87tUOVo/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FRJ8x87tUOVo%3Fstart%3D14%26feature%3Doembed%26start%3D14&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRJ8x87tUOVo&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRJ8x87tUOVo%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                    </a></div>
-                </div>
-                <div class="slider-arrow-link w-slider-arrow-left">
-                  <div class="slider-arrow w-embed"><svg width="36" height="36" viewbox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g opacity="0.7">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M18 5.625C11.1655 5.625 5.625 11.1655 5.625 18C5.625 24.8345 11.1655 30.375 18 30.375C24.8345 30.375 30.375 24.8345 30.375 18C30.375 11.1655 24.8345 5.625 18 5.625ZM3.375 18C3.375 9.92284 9.92284 3.375 18 3.375C26.0772 3.375 32.625 9.92284 32.625 18C32.625 26.0772 26.0772 32.625 18 32.625C9.92284 32.625 3.375 26.0772 3.375 18Z"
-                          fill="white"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M21.0862 12.1849C21.5018 12.6467 21.4644 13.3581 21.0026 13.7737L16.3067 18L21.0026 22.2263C21.4644 22.6419 21.5018 23.3533 21.0862 23.8151C20.6706 24.2769 19.9592 24.3144 19.4974 23.8987L13.8724 18.8362C13.6354 18.6229 13.5 18.3189 13.5 18C13.5 17.6811 13.6354 17.3772 13.8724 17.1638L19.4974 12.1013C19.9592 11.6857 20.6706 11.7231 21.0862 12.1849Z"
-                          fill="white"></path>
-                      </g>
-                    </svg></div>
-                </div>
-                <div class="slider-arrow-link right w-slider-arrow-right">
-                  <div class="slider-arrow w-embed"><svg width="36" height="36" viewbox="0 0 36 36" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g opacity="0.7">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M18 5.625C11.1655 5.625 5.625 11.1655 5.625 18C5.625 24.8345 11.1655 30.375 18 30.375C24.8345 30.375 30.375 24.8345 30.375 18C30.375 11.1655 24.8345 5.625 18 5.625ZM3.375 18C3.375 9.92284 9.92284 3.375 18 3.375C26.0772 3.375 32.625 9.92284 32.625 18C32.625 26.0772 26.0772 32.625 18 32.625C9.92284 32.625 3.375 26.0772 3.375 18Z"
-                          fill="white"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M15.4763 12.1849C15.8919 11.7231 16.6033 11.6857 17.0651 12.1013L22.6901 17.1638C22.9271 17.3772 23.0625 17.6811 23.0625 18C23.0625 18.3189 22.9271 18.6229 22.6901 18.8362L17.0651 23.8987C16.6033 24.3144 15.8919 24.2769 15.4763 23.8151C15.0607 23.3533 15.0981 22.6419 15.5599 22.2263L20.2558 18L15.5599 13.7737C15.0981 13.3581 15.0607 12.6467 15.4763 12.1849Z"
-                          fill="white"></path>
-                      </g>
-                    </svg></div>
-                </div>
-                <div class="slider-nav w-slider-nav w-round"></div>
-              </div>
             </div>
-          </div>
+                <div class="row team-items">
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="https://img.freepik.com/free-photo/brunette-business-woman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands_197531-343.jpg?uid=P77132511&ga=GA1.1.2048544296.1723098509&semt=ais_hybrid" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="vimeo">
+                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Lorem Ipsum</h4>
+                                <span>Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="https://img.freepik.com/free-photo/businesswoman-posing_23-2148142829.jpg?uid=P77132511&ga=GA1.1.2048544296.1723098509&semt=ais_hybrid" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>
+                                          kING.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="vimeo">
+                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Lorem Ipsum</h4>
+                                <span>App Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="https://img.freepik.com/free-photo/brunette-businesswoman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands-smiles-widely_197531-346.jpg?t=st=1723466644~exp=1723470244~hmac=e37343ba09e7ce93b780b195afd519b80df8a3408323e0ab197b1c4e64a6296d&w=740" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="vimeo">
+                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Lorem Ipsum</h4>
+                                <span>Web designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
-      </section>
+    </section>
       <div class="section-testimonial">
         <div class="page-padding">
           <div class="container-large">
@@ -995,8 +924,7 @@
                           strategy worked wonderfully.&quot;</div>
                       </div>
                       <div class="testimonial-client-logo-wrapper"><img width="126" sizes="72px"
-                          src="../assets/63b7a10e24c56d066fa9ace0_fytika.webp" loading="lazy"
-                          alt="Fytika Logo"
+                          src="../assets/63b7a10e24c56d066fa9ace0_fytika.webp" loading="lazy" alt="Fytika Logo"
                           srcset="../assets/63b7a10e24c56d066fa9ace0_fytika-p-500.webp 500w, ../assets/63b7a10e24c56d066fa9ace0_fytika.webp 747w"
                           class="testimonial-tab-img"></div>
                     </div>
@@ -1037,12 +965,19 @@
           </div>
         </div>
       </div>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+
     </main>
     <footer class="footer_component">
       <div>
-        <div class="section-wave-wrapper"><img
-            src="../assets/639f85241caa8013853d0094_section-wave-dark-footer.svg" loading="lazy"
-            alt="" class="section-wave-footer"></div>
+        <div class="section-wave-wrapper"><img src="../assets/639f85241caa8013853d0094_section-wave-dark-footer.svg"
+            loading="lazy" alt="" class="section-wave-footer"></div>
       </div>
       <div class="footer_main-wrapper c">
         <div class="page-padding">
@@ -1052,8 +987,8 @@
                 <div class="footer_content">
                   <div class="footer_content-left"><a href="influencer-marketing.html" aria-current="page"
                       class="footer_logo-link w-inline-block w--current"><img
-                        src="../assets/639fdfac406f2f4bb7afd6e4_footer-logo.png" loading="lazy"
-                        alt="DiveIn Media Logo in white colour." height="76" class="footer_logo"></a></div>
+                        src="../assets/company-logo.png" loading="lazy"
+                        alt="DiveIn Media Logo in white colour." height="76" class="footer_logo" style="width: 200px; height: 200px;"></a></div>
                 </div>
                 <div class="footer_content">
                   <div class="footer_logo-description">
@@ -1354,6 +1289,8 @@
 
   </script>
   <script data-info="hacks-body">
+
+
     // when the DOM is ready
     $(document).ready(function () {
 
@@ -1410,6 +1347,102 @@
         }
       });
     });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.getElementById('getstarted-btn');
+      const contactForm = document.getElementById('contactForm');
+
+      toggleButton.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+
+     
+
+        if (contactForm.style.display === 'none' || contactForm.style.display === '') {
+          contactForm.style.display = 'block'; // Show form
+        } else {
+          contactForm.style.display = 'none'; // Hide form
+        }
+      });
+    });
+  </script>
+  <script>
+    let i=2;
+  
+    
+    $(document).ready(function(){
+      var radius = 200;
+      var fields = $('.itemDot');
+      var container = $('.dotCircle');
+      var width = container.width();
+   radius = width/2.5;
+   
+       var height = container.height();
+      var angle = 0, step = (2*Math.PI) / fields.length;
+      fields.each(function() {
+        var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
+        var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
+        if(window.console) {
+          console.log($(this).text(), x, y);
+        }
+        
+        $(this).css({
+          left: x + 'px',
+          top: y + 'px'
+        });
+        angle += step;
+      });
+      
+      
+      $('.itemDot').click(function(){
+        
+        var dataTab= $(this).data("tab");
+        $('.itemDot').removeClass('active');
+        $(this).addClass('active');
+        $('.CirItem').removeClass('active');
+        $( '.CirItem'+ dataTab).addClass('active');
+        i=dataTab;
+        
+        $('.dotCircle').css({
+          "transform":"rotate("+(360-(i-1)*36)+"deg)",
+          "transition":"2s"
+        });
+        $('.itemDot').css({
+          "transform":"rotate("+((i-1)*36)+"deg)",
+          "transition":"1s"
+        });
+        
+        
+      });
+      
+      setInterval(function(){
+        var dataTab= $('.itemDot.active').data("tab");
+        if(dataTab>6||i>6){
+        dataTab=1;
+        i=1;
+        }
+        $('.itemDot').removeClass('active');
+        $('[data-tab="'+i+'"]').addClass('active');
+        $('.CirItem').removeClass('active');
+        $( '.CirItem'+i).addClass('active');
+        i++;
+        
+        
+        $('.dotCircle').css({
+          "transform":"rotate("+(360-(i-2)*36)+"deg)",
+          "transition":"2s"
+        });
+        $('.itemDot').css({
+          "transform":"rotate("+((i-2)*36)+"deg)",
+          "transition":"1s"
+        });
+        
+        }, 5000);
+      
+    });
+  
+  
   </script>
 </body>
 
